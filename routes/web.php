@@ -29,3 +29,12 @@ Route::get('/edit_note/{id}', 'NoteController@editNote');
 Route::get('/update_note/{id}', 'NoteController@updateNote');
 
 Route::get('/delete_note/{id}', 'NoteController@deleteNote');
+
+
+Route::get('/layout', function (){
+    return view('layout');
+});
+
+Route::get('/children', function(){
+    return view('children');
+});
